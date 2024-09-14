@@ -16,75 +16,96 @@
   --list-color: hsl(330, 100%, 98%);
   --title-color: hsl(14, 45%, 36%);
   --titlebox-color:hsl(332, 51%, 32%);
+  --font-size:10px;
 }
 
 *{
   box-sizing: border-box;
 }
 
+html,body{
+  height: 120%;
+}
+
 body{
   background-color: var(--body-color);
   font-family: var(--font-body);
+  font-size: var(--font-size);
+  margin: 0;
 }
 
+body *{
+  padding:0 auto;
+  margin: 0 auto;
+}
+
+hr{
+  border: none;
+  border-top:1px solid lightgray;
+}
 
 .card, .image, .box{
   border-radius: 10px;
 }
 
-.box{
-  margin: 10px;
-  padding: 10px;
+
+.card{
+  background-color: hsl(0, 0%, 100%);
+  padding: 0 2em;
+  max-width:450px;
 }
 
-.box--margin{
-  padding: 10px 20px;
+.card--margin, article{
+  margin:1em auto;
+}
+
+.card--block{
+  display: inline-block;
+}
+
+.box{
+  padding:1em;
 }
 
 .box__color{
   background-color: var(--list-color);
 }
-.box--title{
-  color:var(--titlebox-color);
-}
-
-.card{
-  background-color: hsl(0, 0%, 100%);
-  /* width: clamp(225px, 100%, 700px); */
-}
 
 .flex{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-}
-
-.flex__item{
-  max-width: 675px;
+  height: 100%;
 }
 
 .image{
-  width: clamp(250px, 100%, 620px);
+  max-width: 100%;
 }
 
 .list{
-  /* list-style-position: inside; */
-  padding-left: 20px;
+  padding-left: 1.5em;
+  padding-bottom: 0.5em;
 }
 
-.list li::marker{
+.list li{
+  padding-left:1em;
+  margin:0.5em 0;
+}
+
+.list li::marker, .measures{
   color:var(--title-color);
+  font-weight: bold;
 }
 
 .list__titlebox-color li::marker{
   color:var(--titlebox-color);
 }
 
-.paragraph{
-  line-height: 1.5rem;
-}
+.card--paragraph{
+  padding-left: 2em;
 
+}
 
 .span-bold{
   font-weight: bold;
@@ -92,12 +113,18 @@ body{
 
 .title{
   font-family: var(--font-heading);
-  font-size: 2.40rem;
-  margin: 1rem auto;
+  font-size: 2.4em;
 }
 
 .title__2{
-  font-size: 2rem;
+  font-size: 2em;
   color:var(--title-color);
   font-weight: 400;
 }
+
+.title__3{
+  color:var(--titlebox-color);
+  font-family: var(--font-body);
+  font-size:1.25em
+}
+
