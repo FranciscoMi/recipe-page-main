@@ -17,6 +17,7 @@
   --title-color: hsl(14, 45%, 36%);
   --titlebox-color:hsl(332, 51%, 32%);
   --font-size:16px;
+  --box-margin:2.5em;
 }
 
 *{
@@ -40,7 +41,7 @@ hr{
 }
 
 section{
-  margin: 0 2.5em;
+  margin: 0 var(--box-margin);
 }
 
 #imageRecipe{
@@ -49,9 +50,7 @@ section{
   
 }
 
-.header-image{
-padding-top: 2.5em;
-}
+
 
 .box{
   padding:1em 2em;
@@ -67,6 +66,8 @@ padding-top: 2.5em;
 }
 
 .card{
+  padding-top: 2.5em;
+  padding-bottom:2.5em;
   background-color: hsl(0, 0%, 100%);
   max-width:750px;
   border-radius: 20px;
@@ -74,12 +75,11 @@ padding-top: 2.5em;
 
 
 .card--margin{
-  margin:2.5em;
-  /* padding-top: 2.5em; */
+  margin:var(--box-margin);
 }
 
-p, hr, article, ul:not(.card--box), ol{
-margin-top: 2em;
+p, hr, article, ul:not(.card--box), ol, header{
+margin-top: 1.5em;
 }
 
 .container{
