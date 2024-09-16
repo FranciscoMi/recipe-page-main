@@ -16,19 +16,14 @@
   --list-color: hsl(330, 100%, 98%);
   --title-color: hsl(14, 45%, 36%);
   --titlebox-color:hsl(332, 51%, 32%);
-  --font-size:10px;
+  --font-size:16px;
 }
 
 *{
   box-sizing: border-box;
 }
 
-html,body{
-  height: 120%;
-}
-
 body{
-  background-color: var(--body-color);
   font-family: var(--font-body);
   font-size: var(--font-size);
   margin: 0;
@@ -44,44 +39,55 @@ hr{
   border-top:1px solid lightgray;
 }
 
-.card, .image, .box{
+section{
+  margin: 0 2.5em;
+}
+
+#imageRecipe{
+  width: 100%;
   border-radius: 10px;
+  
 }
 
-
-.card{
-  background-color: hsl(0, 0%, 100%);
-  padding: 0 2em;
-  max-width:450px;
-}
-
-.card--margin, article{
-  margin:1em auto;
-}
-
-.card--block{
-  display: inline-block;
+.header-image{
+padding-top: 2.5em;
 }
 
 .box{
-  padding:1em;
+  padding:1em 2em;
+  border-radius: 10px;
 }
 
 .box__color{
   background-color: var(--list-color);
 }
 
-.flex{
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center;
-  height: 100%;
+.card__paragraph, li{
+  line-height: 1.5em;
 }
 
-.image{
-  max-width: 100%;
+.card{
+  background-color: hsl(0, 0%, 100%);
+  max-width:750px;
+  border-radius: 20px;
 }
+
+
+.card--margin{
+  margin:2.5em;
+  /* padding-top: 2.5em; */
+}
+
+p, hr, article, ul:not(.card--box), ol{
+margin-top: 2em;
+}
+
+.container{
+  background-color: var(--body-color);
+  position: relative;
+  padding:10vw;
+}
+
 
 .list{
   padding-left: 1.5em;
@@ -102,10 +108,6 @@ hr{
   color:var(--titlebox-color);
 }
 
-.card--paragraph{
-  padding-left: 2em;
-
-}
 
 .span-bold{
   font-weight: bold;
@@ -114,10 +116,11 @@ hr{
 .title{
   font-family: var(--font-heading);
   font-size: 2.4em;
+  line-height: 1em;
 }
 
 .title__2{
-  font-size: 2em;
+  font-size: 1.75em;
   color:var(--title-color);
   font-weight: 400;
 }
@@ -128,3 +131,24 @@ hr{
   font-size:1.25em
 }
 
+@media only screen and (max-width:525px){
+  #imageRecipe{
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  .container{
+    min-width: 320px;
+    background-color: inherit;
+    padding: 0;
+  }
+
+  .container__center{
+    position: absolute;
+    left:0;
+    right: 0;
+  }
+
+  
+
+}
