@@ -45,26 +45,23 @@ p, hr, article, ul:not(.card--box), ol, header{
   margin-top: 1.5em;
 }
 
-#imageRecipe{
+.card__image{
   width: 100%;
   border-radius: 10px;
 }
 
-#nutritionalBox hr{
+.box__nutritional hr{
   margin-top:0;
 }
 
 
-#nutritionalValues p{
+.box__nutritional p{
   margin-left:var(--box-margin);
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:auto;
 }
 
-#nutritionalValues span{
+.box__nutritional span{
   display: inline-block;
-  width: 100%;
+  width: 50%;
 }
 
 .box{
@@ -144,7 +141,7 @@ p, hr, article, ul:not(.card--box), ol, header{
 @media only screen and (max-width:525px){
   
 
-  #imageRecipe{
+  .card__image{
     border-radius: 0;
     margin: 0;
   }
