@@ -44,11 +44,6 @@ p, hr, article, ul:not(.card--box), ol, header{
   margin-top: 1.5em;
 }
 
-.card__image{
-  width: 100%;
-  border-radius: 10px;
-}
-
 .box__nutritional hr{
   margin-top:0;
 }
@@ -83,6 +78,10 @@ p, hr, article, ul:not(.card--box), ol, header{
   border-radius: 20px;
 }
 
+.card__image{
+  width: 100%;
+  border-radius: 10px;
+}
 
 .card--margin{
   margin:var(--boxmargin);
