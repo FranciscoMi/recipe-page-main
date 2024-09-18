@@ -12,12 +12,12 @@
 :root{
   --font-body:"Outfit", Arial, Helvetica, sans-serif;
   --font-heading: "Young-Serif",sans-serif;
+  --box-margin:2.5em;
   --body-color: hsl(30, 54%, 90%);
   --list-color: hsl(330, 100%, 98%);
   --title-color: hsl(14, 45%, 36%);
   --titlebox-color:hsl(332, 51%, 32%);
   --font-size:16px;
-  --box-margin:2.5em;
 }
 
 *{
@@ -32,7 +32,6 @@ body{
 }
 
 body *{
-  padding:0 auto;
   margin: 0 auto;
 }
 
@@ -92,6 +91,8 @@ p, hr, article, ul:not(.card--box), ol, header{
 .container{
   background-color: var(--body-color);
   position: relative;
+  left:0;
+  top:0;
   padding:10vw;
 }
 
