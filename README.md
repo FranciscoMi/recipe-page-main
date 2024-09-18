@@ -26,7 +26,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [https://franciscomi.github.io/recipe-page-main/](https://your-solution-url.com)
+- Solution URL: [https://franciscomi.github.io/recipe-page-main/](https://franciscomi.github.io/recipe-page-main/)
 
 ## My process
 
@@ -86,6 +86,6 @@ The solution I found was to create a container class with a 10vw padding in the 
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@FranciscoMi](https://www.frontendmentor.io/FranciscoMi/yourusername)
 
 
