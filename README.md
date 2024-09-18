@@ -86,6 +86,6 @@ The solution I found was to create a container class with a 10vw padding in the 
 
 ## Author
 
-- Frontend Mentor - [@FranciscoMi](https://www.frontendmentor.io/FranciscoMi/yourusername)
+- Frontend Mentor - [@FranciscoMi](https://www.frontendmentor.io/FranciscoMi/)
 
 
